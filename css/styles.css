@@ -228,6 +228,9 @@ h6 {
 
 .section-doings-item {
   margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-doings-item:last-child {
@@ -278,6 +281,10 @@ h6 {
   margin-bottom: 30px;
 }
 
+.social-item {
+  margin-left: 10px;
+}
+
 .social-item a {
   display: flex;
   align-items: center;
@@ -291,13 +298,19 @@ h6 {
   fill: #afb1b8;
 }
 
-.social-item:hover {
+.social-item:first-child {
+  margin-left: 0;
+}
+
+.social-item a:hover,
+.social-item a:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item:hover svg {
+.social-item a:hover svg,
+.social-item a:focus svg {
   fill: #ffffff;
 }
 
@@ -327,6 +340,10 @@ ul .address-item:first-child {
   flex-direction: column;
 }
 
+.section-partners h2 {
+  text-align: center;
+}
+
 .partners-list {
   display: flex;
 
@@ -337,11 +354,17 @@ ul .address-item:first-child {
 .partners-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.partners-item a {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #afb1b8;
 }
 
 .partners-item:not(:last-child) {
@@ -350,9 +373,11 @@ ul .address-item:first-child {
 
 .partners-svg {
   fill: #afb1b8;
+  height: 100%;
 }
 
-.partners-item:hover {
+.partners-item a:hover,
+.partners-item a:focus {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #2196f3;
@@ -360,7 +385,8 @@ ul .address-item:first-child {
   cursor: pointer;
 }
 
-.partners-item:hover svg {
+.partners-item a:hover svg,
+.partners-item a:focus svg {
   fill: #2196f3;
 }
 
@@ -390,7 +416,12 @@ ul .address-item:first-child {
   margin-left: 0;
 }
 
-.join .social-item:hover {
+.join .social-item-icon {
+  fill: #ffffff;
+}
+
+.join .social-item:hover,
+.join .social-item:focus {
   background-color: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
