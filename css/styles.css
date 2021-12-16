@@ -228,13 +228,14 @@ h6 {
 
 .section-doings-item {
   margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .section-doings-item:last-child {
   margin-right: 0;
+}
+
+.section-team {
+  background: #f5f4fa;
 }
 
 .section-team-list {
@@ -269,6 +270,7 @@ h6 {
 .section-position {
   font-size: 16px;
   color: var(--third-text-color);
+  margin-bottom: 16px;
 }
 
 .socials {
