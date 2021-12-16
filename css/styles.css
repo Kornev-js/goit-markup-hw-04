@@ -140,7 +140,7 @@ h6 {
 }
 
 .main-section {
-  width: 1600px;
+  max-width: 1600px;
   margin: auto;
   display: block;
   text-align: center;
